@@ -1,0 +1,117 @@
+:root{
+    --color-copyright-text: rgba(255, 245, 238, .8);
+  --color-copyright-moreinfo: #fff200;
+}
+
+.copyright-moreinfo {
+    position: fixed;
+    top:0;
+    right: auto;
+    left: auto;
+    width: 100vw;
+    height: 0;
+    background: rgba(23, 29, 39, 1);
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 0 0, 100% 0, 0 0);
+    pointer-events: none;
+    transition: all .3s ease;
+  }
+  
+  .copyright-moreinfo.active {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    pointer-events: auto;
+  }
+  
+  .moreinfo-box i.moreinfo-closebtn {
+    font-size: 1rem;
+    top: -2rem;
+    right: -1.5rem;
+    color: var(--color-copyright-text);
+    border: 1px solid #d3d16100;
+    transition: all .3s linear;
+    cursor: pointer;
+  }
+  
+  .moreinfo-box i.moreinfo-closebtn:hover {
+    transform: scale(1.2);
+    color: var(--color-copyright-moreinfo);
+    border: 1px solid var(--color-copyright-moreinfo);
+    border-radius: 50px;
+  }
+  
+  .moreinfo-box {
+    position: relative;
+    min-width: 320px;
+    max-width: 50vw;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transform: translateX(-.8rem) scale(1);
+  }
+  
+  .moreinfo-box h4 {
+    font-size: .8rem;
+  }
+  
+  .moreinfo-box span {
+    font-size: .75rem;
+  }
+  
+  .moreinfo-box a {
+    font-size: .75rem;
+    color: var(--color-copyright-text);
+    transform: scale(.8);
+    display: inline-block;
+    position: relative;
+    transition: all .3s linear;
+  }
+  
+  .moreinfo-box a:hover {
+    color: var(--color-copyright-moreinfo);
+  }
+  
+  .moreinfo-box a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+    border-bottom: 1px solid var(--color-copyright-moreinfo);
+    transition: all .3s linear;
+  }
+  
+  .moreinfo-box a:hover::after {
+    left: 0;
+    width: 100%;
+  }
+  
+  .link-box {
+    display: grid;
+    gap: .3rem;
+  }
+  
+  @media(max-width:760px){
+    .moreinfo-box {
+      transform: translateX(-.8rem) scale(.9);
+    }
+    .moreinfo-box i.moreinfo-closebtn {
+      font-size: 1.1rem;
+    }
+  }
+  @media(max-width:400px){
+    .moreinfo-box {
+      transform: translateX(0) scale(.88);
+    }
+    .moreinfo-box i.moreinfo-closebtn {
+      font-size: 1.25rem;
+      top: -1.2rem;
+      right: -.5rem;
+    }
+  }
