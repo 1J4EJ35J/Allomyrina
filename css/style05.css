@@ -103,6 +103,9 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+.highligh-text{
+  color: var(--skin-color);
+}
 .justify-content-between {
   justify-content: space-between;
 }
@@ -812,8 +815,14 @@ about section
   display: none;
 }
 .about-section .tab-content.active {
-  display: block;
+  display: flex;
 }
+
+.about-section .experience.tab-content{
+margin-left: auto;
+margin-right: auto;
+max-width: 1200px;
+} 
 .about-section .skills .row {
   /* background: pink; */
   justify-content: center;
@@ -920,13 +929,12 @@ about section
   justify-content: center;
   
 }
-.about-section .skill-box .skill-content .code-text,
-.about-section .skill-box .skill-content .soft-text
+.about-section .skill-box .skill-content .code-text
 {
   display: none;
 }
 .about-section .skill-box .skill-content .code-text.active,
-.about-section .skill-box .skill-content .soft-text.active{
+.about-section .skill-box .skill-content .soft-text{
   display: block;
 }
 .about-section .skill-box .skill-content h3 {
@@ -979,7 +987,7 @@ about section
 }
 .about-section .timeline .timeline-item:nth-child(odd) {
   padding-right: calc(50% + 50px);
-  text-align: right;
+  
 }
 .about-section .timeline .timeline-item:nth-child(even) {
   padding-left: calc(50% + 50px);
@@ -1052,12 +1060,7 @@ about section
   display: grid;
   row-gap: .5rem;
 }
-.about-section .timeline .timeline-item:nth-child(odd) .works-itembox{
-  margin-left: 16%;
-}
-.about-section .timeline .timeline-item:nth-child(even) .works-itembox:nth-child(even){
-  margin-right: 16%;
-}
+
 .about-section .timeline .timeline-item-inner .works-itembox div{
   display: flex;
   text-align: left;
@@ -1206,7 +1209,7 @@ portfolio section
 }
 .portfolio-section .portfolio-item-img .view-project {
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: .85rem;
   font-weight: 500;
   color: var(--skin-color);
   transition: all 0.3s ease;
@@ -1218,7 +1221,7 @@ portfolio section
   opacity: 0;
 }
 .portfolio-section .portfolio-item-inner:hover .view-project {
-  transform: translateY(0.4rem);
+  transform: translateY(0rem);
   opacity: 1;
 }
 p.portfolio-item-title{
