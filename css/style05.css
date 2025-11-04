@@ -15,7 +15,7 @@
   --bg-opacity: hsla(0, 0%, 100%, 0.5);
   --text-black-900: hsl(0, 0%, 0%);
   --text-black-700: hsl(0, 0%, 33%);
-  --text-black-600: hsl(0, 0%, 39%);
+  --text-black-600: hsl(0, 0%, 40%);
   --text-black-500: hsl(0, 0%, 45%);
   --text-black-300: hsl(0, 0%, 73%);
   --text-black-200: hsl(0, 0%, 86%);
@@ -99,7 +99,7 @@ img {
 
 .zhtw {
   font-family: var(--zhTW-font);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .eng-text {

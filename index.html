@@ -23,6 +23,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/font-awesome.css">
 
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <!-- style switcher - for demo purposes only -->
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="./css/skins/color-1.css">
     <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="./css/skins/color-2.css"
@@ -1583,49 +1586,6 @@
     <div class="pp portfolio-popup">
         <div class="pp-details" id="top">
             <div class="pp-details-inner">
-                <!-- data-box start-->
-                <!-- <div class="data-box portfolio-item-details" data-details="restaurant">
-                    <div class="row">
-                        <div class="briefbox">
-                            <h3>Project Brief:</h3>
-                            <div class="briefbox-content">
-                                <div class="code">
-                                    <h4>&lt; / &gt;</h4>
-                                    <p class="zhtw">這是我的第一個學習。<br>
-                                        和許多人一樣，在學習一段時間之後，第一次自己從零開始寫網頁時，毫無頭緒。我在<span
-                                            class="eng-text">Youtube</span>上搜尋，發現許多業界的<span class="eng-text">Web
-                                            dev</span>創建許多示範與教學影片，相較於基礎教學，這些影片的網頁製作教學示範更為完整。<br>我明白有許多像是<span
-                                            class="eng-text">WIX、WordPress</span>這類能使架設更便利的網站，並且不需要敲代碼。但是在看到許多<span
-                                            class="eng-text">Web
-                                            dev</span>的教學影片後，我決定靜下心來，好好的一行一行的跟著這些開發者編寫示範案例，學習他們的思維架構與如何靈活運用語言。</p>
-                                </div>
-                                <div class="figma">
-                                    <h4>Figma</h4>
-                                    <p class="zhtw">此次<span
-                                            class="eng-text">Figma</span>的製作重點，在於如何在螢幕捲動時，元件在進入可視範圍時的動畫。這在製作網頁時，是增加網頁趣味性的常見手法，在網頁語言中，引入現成的第三方程式套件，使元件滑入動畫相當容易。但是在<span
-                                            class="eng-text">Figma</span>中，卻要相當複雜的設置與間張銜接動作，再加上<span
-                                            class="eng-text">Figma Prototype</span>
-                                        的動畫較不順暢，使秒數在動畫呈現上並不一定正確，因此加入文字解說與溝通就顯得非常重要。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="infobox">
-                            <h3>Project info</h3>
-                            <ul>
-                                <li>Date - <span>2022~2023</span></li>
-                                <li>Tools - <span>html, css, javascript</span></li>
-                                <li>Project imgs/videos source - <span>pexels.com/unsplash.com</span></li>
-                            </ul>
-                            <div class="link">
-                                <a href="https://ancientbook.bokupig.design/R_restaurant/"
-                                    class="btn-1 outer-shadow hover-in-shadow" target="_blank">web</a>
-                                <a href="https://www.figma.com/file/Jxd1KNvfkR3ET37YQJHIol/resraurant?node-id=16%3A145"
-                                    class="btn-1 outer-shadow hover-in-shadow" target="_blank">figma</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- data-box end-->
 
                 <!-- data-box start-->
                 <div class="data-box portfolio-item-details" data-details="x_aeftibr">
@@ -1846,237 +1806,347 @@
         <div class="pp-main">
             <div class="pp-main-inner">
                 <!-- pp-box start -->
-                <div class="pp-box outer-shadow" data-page="tesla">
-                    <div class="cb-screenshot">
-                        <div class="cb-screenshot-preview -lg">
-                            <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/img/a-0.webp"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="cb-description">
-                        <div class="cb-description-content">
-                            <div class="cb-description-container">
-                                <div class="cb-description-header">
-                                    <h2 class="-margin">
-                                        使用動畫<br>
-                                        提升品牌形象
-                                    </h2>
-                                    <p>設計簡短過場動畫提高應用程式的品牌形象與顧客好感。</p>
+
+                <div class="pp-box outer-shadow" data-page="x_aeftibr">
+                    <div class="cb-tophead" id="home">
+                        <div class="cb-tophead-content">
+                            <div class="cb-tophead-container">
+                                <div class="cb-tophead-header">
+                                    <h2>Healthy Aerobic Exercise Management System</h2>
                                 </div>
+                                <div class="cb-tophead-title">
+                                    <h2>健康有氧運動APP<br>
+                                        後台管理系統</h2>
+                                </div>
+                                <p>
+                                    此專案作品集主要說明我如何與後端工程師協作，解決既有系統的 UI 邏輯問題，工程師搬運功能導致畫面排版混亂，重新整理與比對介面，建立一致且清晰的使用體驗。
+                                </p>
+
                             </div>
                         </div>
                     </div>
                     <div class="cb-screenshot">
-                        <div class="cb-screenshot-preview">
-                            <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/img/c-0.webp"
-                                alt="">
+                        <div class="cb-screenshot-preview ">
+                            <img src="https://ancientbook.bokupig.space/x_aeftibr/img/br-01.webp" alt="">
                         </div>
                     </div>
-                    <div class="cb-splitshow">
-                        <div class="cb-splitshow-content -cb">
-                            <div class="cb-splitshow-container">
-                                <div class="cb-splitshow-items">
-                                    <div class="cb-splitshow-col -left">
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <video
-                                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/c-1.webm"
-                                                    preload="auto" loop muted auto play></video>
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>在APP使用上，透過過場動畫或特效的點綴，令使用者體驗提升。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item -rightInLeft">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <video
-                                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/c-3.webm"
-                                                    preload="auto" loop muted autoplay></video>
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>利用簡易動態豐富畫面。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/img/c-2.webp"
-                                                    alt="">
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>透動態模型，呈現動畫效果，方便與工程師溝通。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item -rightInLeft">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <video
-                                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/c-4.webm"
-                                                    preload="auto" loop muted autoplay></video>
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>動畫特效過度複雜，易造成運作負擔，我在設計時會思考如何取得平衡。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cb-splitshow-col -right">
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <video
-                                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/c-3.webm"
-                                                    preload="auto" loop muted autoplay></video>
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>利用簡易動態豐富畫面。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <video
-                                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/c-4.webm"
-                                                    preload="auto" loop muted autoplay></video>
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>動畫特效過度複雜，易造成運作負擔，我在設計時會思考如何取得平衡。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="cb-description-content">
+                        <div class="cb-description-container">
+                            <div class="cb-description-header box">
+                                <h2 class="-margin">
+                                    配合專案需要<br>
+                                    滾動調整自己的角色
+                                </h2>
                             </div>
-                        </div>
-                    </div>
-                    <div class="cb-description">
-                        <div class="cb-description-content">
-                            <div class="cb-description-container">
-                                <div class="cb-description-header">
-                                    <h2 class="-margin">
-                                        只做表面<br>
-                                        忽略小細節
-                                    </h2>
-                                    <p>單純的UI 設計，不另外分流動態模擬，很容易忽略許多畫面細節。</p>
+                            <div class="cb-description-box">
+                                <p>由於公司的決策限制，此專案時程僅有35天，同時有其他專案必須進行。在與後端工程師討論後，我調整自己的角色與工作流程。跳脫制式的設計流程，直接進入MVC
+                                    架構，與工程師同步開發，大幅縮短傳統切版檔案交付、節省反覆比對的時間消耗，使專案如期完成。
+                                </p>
+                                <p>
+                                    此專案作品集主要說明我如何在有限資源下，與後端工程師協作，解決既有系統的 UI 邏輯問題，並在功能搬運導致畫面排版混亂時，重新整理與比對介面，建立一致且清晰的使用體驗。
+                                </p>
+                                <div class="cb-description-list-zone">
+                                    <div class="cb-description-list-group">
+                                        <ul class="cb-description-list">
+                                            <li class="item">
+                                                <p class="eng-text alphabetical-order">1.</p>
+                                                <p>跳脫制式設計流程，透過Git 與後端工程師同步開發。</p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="eng-text alphabetical-order">2.</p>
+                                                <p>既有系統的UI邏輯問題，工程師搬運功能後排版紊亂，一併統整與優化展示。</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="cb-screenshot">
                         <div class="cb-screenshot-container">
-                            <div class="cb-screenshot-preview">
-                                <video
-                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/d-0.webm"
-                                    preload="auto" loop muted autoplay></video>
+                            <div class="cb-screenshot-preview -iwh">
+                                <img src="https://ancientbook.bokupig.space/x_aeftibr/img/png/br-02.png" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="splitshow">
-                        <div class="cb-splitshow-content -cb">
-                            <div class="cb-splitshow-container">
-                                <div class="cb-splitshow-items">
-                                    <div class="cb-splitshow-col -left">
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview -sm">
-                                                <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/img/d-1.webp"
-                                                    alt="">
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>網路上有許多UI 設計分享，絕大部分是2~3頁，美麗照片或插圖素材，配上遵循標準的間距規則與黑體字。</p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item -rightInLeft">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/img/d-3.webp"
-                                                    alt="">
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>在沒有模擬Prototype的情況下，我發現單純的UI 設計很容易忽略許多畫面細節。</p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview ">
-                                                <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/img/d-2.webp"
-                                                    alt="">
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>設定動態原型，可轉換角度，發現許多畫面以外的訊息。</p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item -rightInLeft">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <video
-                                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/d-4.webm"
-                                                    preload="auto" loop muted autoplay></video>
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>透過模擬操作，使設計更貼近使用者。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cb-splitshow-col -right">
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/img/d-3.webp"
-                                                    alt="">
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>在沒有模擬Prototype的情況下，我發現單純的UI 設計很容易忽略許多畫面細節。</p>
-                                            </div>
-                                        </div>
-                                        <div class="cb-splitshow-item">
-                                            <div class="blur-bg"></div>
-                                            <div class="cb-splitshow-preview">
-                                                <video
-                                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/d-4.webm"
-                                                    preload="auto" loop muted autoplay></video>
-                                            </div>
-                                            <div class="cb-splitshow-caption">
-                                                <p>透過模擬操作，使設計更貼近使用者。</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="cb-description-content -mb ">
+                        <div class="cb-description-container">
+                            <div class="cb-description-header box">
+                                <p class="s-title">
+                                    Section 1
+                                </p>
+                                <h2 class="-margin b-section-1">
+                                    跳脫制式開發流程
+                                    <br>
+                                    屬於我自己分支
+                                </h2>
+                            </div>
+                            <div class="cb-description-box">
+                                <p>在 Git 中，我建立了本地分支 feat/fourth，完成檔案修改後，推送至遠端 develop。工程師git
+                                    pull之後，可以透過畫面，直觀的了解那些功能需要修改，大幅省去反覆比對、合併程式碼的時間耗損。
+                                </p>
+                                <p>
+                                    以下使用Popup window 顯示資料為範例，說明Component 套用與協作流程。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh">
+                                <img src="https://ancientbook.bokupig.space/x_aeftibr/img/png/br-03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh">
+                                <video loop="" autoplay="" muted="" playsinline="" preload="auto">
+                                    <source src="https://ancientbook.bokupig.space/x_aeftibr/video/webm/R-02 nq.webm"
+                                        type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cb-description-zone pb-75 pt-75">
+                        <div class="cb-description-container">
+                            <div class="cb-description-box">
+                                <div class="cb-description-title-box">
+                                    <i class="fa-solid fa-up-long icon-control"></i>
+                                    <p class="cb-description-title">Component Library</p>
                                 </div>
 
+                                <p>在wwwroot內直接建立元件庫，制式化各種元件的基礎樣式。特殊細節或不同需求在各頁scss中另外編寫。
+                                </p>
+                                <p>
+                                    此處以Popup為例，建立Popup window 基礎視覺風格與完整RWD。下面透過影片展示，說明Component 套用與協作流程。
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="cb-screenshot-container">
-                        <div class="cb-screenshot-preview">
-                            <video preload="auto" loop muted autoplay>
-                                <source
-                                    src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/tesla/video/b-0.webm"
-                                    type="video/webm">
-                            </video>
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh">
+                                <img src="https://ancientbook.bokupig.space/x_aeftibr/img/png/br-04.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="cb-description">
-                        <div class="cb-description-content">
-                            <div class="cb-description-container">
-                                <div class="end-block hover-in-shadow  ">
-                                    <p class="end">-- Thank you --</p>
+                    <div class="cb-description-zone pb-75 pt-75">
+                        <div class="cb-description-container">
+                            <div class="cb-description-box">
+                                <div class="cb-description-title-box">
+                                    <i class="fa-solid fa-up-long icon-control"></i>
+                                    <p class="cb-description-title">搬運後的UI問題</p>
+                                </div>
+
+                                <p>工程師搬運其他系統Popup window ，出現視覺風格不統一與圖文排版問題。Popup
+                                    window的關閉按鈕在原系統中，也有畫面尺寸改變導致按鈕超出螢幕畫面，無法關閉視窗的情況。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh">
+                                <img src="https://ancientbook.bokupig.space/x_aeftibr/img/png/br-05.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh">
+                                <video loop="" autoplay="" muted="" playsinline="" preload="auto">
+                                    <source src="https://ancientbook.bokupig.space/x_aeftibr/video/webm/R-03 nq.webm"
+                                        type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cb-description-zone pt-75">
+                        <div class="cb-description-container">
+                            <div class="cb-description-box">
+                                <div class="cb-description-title-box">
+                                    <i class="fa-solid fa-up-long icon-control"></i>
+                                    <p class="cb-description-title">上圖</p>
+                                </div>
+                                <p>內容的布局樣式，寫在廣告管理頁的SCSS中，檔案命名與Razor
+                                    View相同，各頁面引用同名的CSS，方便後續的維護。如果工程師有臨時需要，也可快速縮小範圍查找，避免大海撈針。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb-description-zone pb-75 pt-35">
+                        <div class="cb-description-container">
+                            <div class="cb-description-box">
+                                <div class="cb-description-title-box">
+                                    <i class="fa-solid fa-up-long icon-control"></i>
+                                    <p class="cb-description-title">影片</p>
+                                </div>
+                                <p>接修改結構，套用class，因工程師將Popup 內容另外做成 PartialView，而主標題與關閉按鈕等共用功能在主頁面裡，所以將部分Code
+                                    移到主功能頁cshtml 內。
+                                </p>
+                                <div class="cb-description-list-zone">
+                                    <div class="cb-description-list-group">
+                                        <ul class="cb-description-list">
+                                            <li class="item">
+                                                <p>在MVC架構中，有許多PartialView，需要在不同檔案之間調整&lt;tag&gt;與架構，以確保Class 套用正確。</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh">
+                                <video loop="" autoplay="" muted="" playsinline="" preload="auto">
+                                    <source src="https://ancientbook.bokupig.space/x_aeftibr/video/webm/R-04.webm"
+                                        type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb-description-zone pb-75 pt-75">
+                        <div class="cb-description-container">
+                            <div class="cb-description-box">
+                                <div class="cb-description-title-box">
+                                    <i class="fa-solid fa-up-long icon-control"></i>
+                                    <p class="cb-description-title">透過Git 與工程師合作</p>
+                                </div>
+                                <p>因其他修改混在同一次提交，而當天正好要進行測試機與正式機同步，工程師會來不及修正Popup window 關閉功能。因此我使用 cherry-pick 將廣告管理
+                                    Popup window
+                                    的提交單獨挑出，推送到遠端 develop；其餘修改則保留在遠端 feat/fourth，供工程師後續串接。
+                                </p>
+                                <div class="cb-description-list-zone">
+                                    <div class="cb-description-list-group">
+                                        <ul class="cb-description-list">
+                                            <li class="item">
+                                                <p>推送完成後，知會工程師確認需要重新串接或修正功能。
+                                                    工程師git pull之後，可以透過畫面直觀了解損壞的功能進行修正，或是透過Git快速比對，不需要反覆擷取、合併切版程式碼。</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh beforetext">
+                                <img src="https://ancientbook.bokupig.space/x_aeftibr/img/png/br-06.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb-screenshot">
+                        <div class="cb-screenshot-container">
+                            <div class="cb-screenshot-preview -iwh aftertext">
+                                <video loop="" autoplay="" muted="" playsinline="" preload="auto">
+                                    <source src="https://ancientbook.bokupig.space/x_aeftibr/video/webm/R-05 nq.webm"
+                                        type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb-description-zone pt-75">
+                        <div class="cb-description-container">
+                            <div class="cb-description-box">
+                                <div class="cb-description-title-box">
+                                    <i class="fa-solid fa-up-long icon-control"></i>
+                                    <p class="cb-description-title">確認測試機與本地一致</p>
+                                </div>
+                                <p>在工程師更新至測試機後，確認操作流程與UI視覺細節，確保沒有遺漏或錯誤。
+                                </p>
+                                <div class="cb-description-list-zone">
+                                    <div class="cb-description-list-group">
+                                        <ul class="cb-description-list">
+                                            <li class="item">
+                                                <p class="eng-text alphabetical-order">1.</p>
+                                                <p>
+                                                    相較製作設計稿和切版，我真正參與設計落地的過程，實際的解決問題。
+                                                </p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="eng-text alphabetical-order">2.</p>
+                                                <p>
+                                                    透過Git與工程師協作，為團隊效率大幅提升。
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="cb-description-content -mb">
+                        <div class="cb-description-container">
+                            <div class="cb-description-header box">
+                                <p class="s-title">Section 2</p>
+                                <h2 class="-margin b-section-2">
+                                    調整布局RWD
+                                    <br>
+                                    基礎功能邏輯統一
+                                </h2>
+                            </div>
+                            <div class="cb-description-box">
+                                <p>
+                                    解決既有系統的UI擠壓問題，拓展新的Sidebar階層。
+                                    邏輯性歸納篩選功能，制定規則，標準化功能性設計視覺。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="cb-screenshot-swiper-zone">
+                        <div class="cb-screenshot-swiper-container swiper Swiper_01">
+                            <div class="cb-screenshot-wrapper -iwh swiper-wrapper">
+                                <div class="swiper-slide beforetext">
+                                    <img src="https://ancientbook.bokupig.space/x_aeftibr/img/png/br-08.png" alt="">
+                                </div>
+                                <div class="swiper-slide beforetext">
+                                    <img src="https://ancientbook.bokupig.space/x_aeftibr/img/png/br-07.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </section>
+                    <section class="cb-screenshot-swiper-zone">
+                        <div class="cb-screenshot-swiper-container swiper Swiper_01">
+                            <div class="cb-screenshot-wrapper -iwh swiper-wrapper">
+                                <div class="swiper-slide aftertext">
+                                    <video loop autoplay muted playsinline preload="auto">
+                                        <source
+                                            src="https://ancientbook.bokupig.space/x_aeftibr/video/webm/R-06 nq.webm"
+                                            type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="swiper-slide aftertext">
+                                    <img src="./img/png/br-09.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </section>
+
+
+
                 </div>
                 <!-- pp-box end -->
 
                 <!-- pp-box start -->
                 <div class="pp-box outer-shadow" data-page="flight">
                     <div class="cb-screenshot">
-                        <div class="cb-screenshot-preview -lg">
+                        <div class="cb-screenshot-preview ">
                             <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/flight/img/a-0.webp"
                                 alt="">
                         </div>
@@ -2207,7 +2277,7 @@
                     </div>
                     <div class="cb-screenshot">
                         <div class="cb-screenshot-container">
-                            <div class="cb-screenshot-preview -lg">
+                            <div class="cb-screenshot-preview ">
                                 <video
                                     src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ui/flight/video/c-0.webm"
                                     preload="auto" loop muted autoplay></video>
@@ -2506,7 +2576,7 @@
                 <!-- pp-box start -->
                 <div class="pp-box outer-shadow" data-page="book">
                     <section class="cb-screenshot">
-                        <div class="cb-screenshot-preview -lg">
+                        <div class="cb-screenshot-preview ">
                             <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ancientbook/img/a-00.webp"
                                 alt="">
                         </div>
@@ -2966,7 +3036,7 @@
                     </section>
                     <section class="cb-screenshot">
                         <div class="cb-screenshot-container">
-                            <div class="cb-screenshot-preview -lg">
+                            <div class="cb-screenshot-preview ">
                                 <img src="https://raw.githubusercontent.com/1J4EJ35J/Ancientbook/main/P_ancientbook/img/f-00.webp"
                                     alt="">
                             </div>
@@ -3540,6 +3610,21 @@
     <script src="js/style-switcher.js"></script>
     <script src="./extra/Copyright.js"></script>
     <script src="./extra/disablelongpress.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".Swiper_01", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
