@@ -285,7 +285,7 @@ p.end {
 .-mb.cb-smfeed-content,
 .-mb.cb-splitshow-content,
 .cb-content.-mb {
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 
 .-ct.cb-advantage-content,
@@ -904,7 +904,7 @@ splitshow section
   .cb-smfeed-content,
   .cb-splitshow-content,
   .cb-tophead-content {
-    padding: 60px 0;
+    padding: 72px 0;
   }
 
   .cb-advantage-container,
@@ -1269,27 +1269,6 @@ splitshow section
     padding: 0 120px;
   }
 
-}
-
-/******** -mb -lg ********/
-.-mb.cb-advantage-content,
-.-mb.cb-billboard-content,
-.-mb.cb-brief-content,
-.-mb.cb-definition-content,
-.-mb.cb-description-content,
-.-mb.cb-employment-content,
-.-mb.cb-employment-top,
-.-mb.cb-feedback-content,
-.-mb.cb-listing-content,
-.-mb.cb-nextcase-content,
-.-mb.cb-numstat-content,
-.-mb.cb-rcfeed-content,
-.-mb.cb-relcase-content,
-.-mb.cb-screenshot-content,
-.-mb.cb-smfeed-content,
-.-mb.cb-splitshow-content,
-.cb-content.-mb {
-  padding-bottom: 30px;
 }
 
 .-ct.cb-advantage-content,
@@ -1762,7 +1741,7 @@ splitshow section
 .p-list-zone {
   width: 100%;
   height: fit-content;
-  gap: 2rem;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -1770,7 +1749,7 @@ splitshow section
 .p-list-zone .p-list-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: .5rem;
   max-width: 600px;
   align-self: center;
 }
@@ -1861,13 +1840,9 @@ splitshow section
   left: 12px !important;
 }
 
-@media (min-width: 768px) {
-  
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 1200px) {
-  
-}
+@media (min-width: 1200px) {}
 
 @media (max-width: 1200px) {
 
@@ -1903,6 +1878,22 @@ splitshow section
 }
 
 @media (max-width:768px) {
+.pt-75 {
+    padding-top: 4.5rem;
+  }
+
+  .pb-75 {
+    padding-bottom: 4.5rem;
+  }
+
+  .mt-75 {
+    margin-top: 4.5rem;
+  }
+
+  .mb-75 {
+    margin-bottom: 4.5rem;
+  }
+
   .cb-brief-ul-title .character {
     font-size: .5rem;
     margin-top: 7px;
@@ -1975,7 +1966,7 @@ splitshow section
 
   .cb-container.-ml,
   .cb-rcfeed-container.-ml,
-  .cb-screenshot-container{
+  .cb-screenshot-container {
     padding: 0 8px;
   }
 
@@ -2042,8 +2033,9 @@ splitshow section
   padding: 0;
 }
 
-.s-text {
+.briefbox-content .s-text {
   font-size: 13px;
+  color: var(--text-black-600);
 }
 
 .portfolio-popup {
@@ -2065,12 +2057,15 @@ splitshow section
   height: fit-content;
 }
 
-.cb-screenshot .cb-screenshot-container{
+.cb-screenshot .cb-screenshot-container {
   padding: 0;
 }
 
-@media(max-width:560px){
-  .cb-tophead-container p{
+
+
+
+@media(max-width:560px) {
+  .cb-tophead-container p {
     max-width: 100%;
   }
 }

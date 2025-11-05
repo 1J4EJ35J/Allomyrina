@@ -1646,7 +1646,7 @@ portfolio popup
   padding: 0 1rem;
 }
 
-.portfolio-popup .portfolio-control .row {
+.portfolio-popup .portfolio-control.row {
   position: relative;
   width: 100%;
   height: auto;
@@ -2000,4 +2000,29 @@ contact section
   max-width: 100%;
   text-align: right;
   padding: 0 1rem;
+}
+.portfolio-popup .pp-close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.portfolio-popup .pp-close i{
+  font-size: 1rem;
+  position: absolute;
+  top:13px;
+}
+.portfolio-popup .pp-close:hover i{
+  color: var(--skin-color);
+}
+
+.portfolio-popup .pp-project-details-btn{
+  width: calc(100% - 54px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.portfolio-popup .portfolio-control{
+  padding: 0;
 }
