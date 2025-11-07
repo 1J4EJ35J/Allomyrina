@@ -1924,16 +1924,21 @@ contact section
   width: 100%;
   display: flex;
   align-items: start;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 4px 10px;
   background: var(--text-black-200);
   border-radius: 4px;
   margin-top: 8px;
 }
-
+body.dark .contact-section .contact-item-inner .small-note{
+  background: var(--bg-black-100);
+  
+  box-shadow: inset 3px 3px 3px #2f2f32, inset -3px -3px 3px #3f3f3f;
+}
 .contact-section .contact-item-inner small {
   color: var(--text-black-700);
   text-align: left;
+  
 }
 
 .contact-section .section-title p,
