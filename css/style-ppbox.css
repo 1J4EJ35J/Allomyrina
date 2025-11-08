@@ -1353,6 +1353,9 @@ splitshow section
   margin-bottom: 4rem;
 }
 
+.pb-00 {
+  padding-bottom: 0rem;
+}
 
 .pb-05 {
   padding-bottom: .5rem;
@@ -1402,6 +1405,10 @@ splitshow section
 .pb-75 {
   padding-bottom: 7.5rem;
   /*120 */
+}
+
+.pt-00 {
+  padding-top: 0rem;
 }
 
 .pt-05 {
@@ -1791,14 +1798,17 @@ splitshow section
   font-size: 14px;
   margin-top: 2px;
 }
-.alphabetical-order.star{
+
+.alphabetical-order.star {
   font-size: 18px;
   margin-top: -2px;
 }
-.alphabetical-order.square{
+
+.alphabetical-order.square {
   font-size: 14px;
-   margin-top: 2px;
+  margin-top: 2px;
 }
+
 .alphabetical-order.star,
 .alphabetical-order.square,
 .alphabetical-order.dot {
@@ -1864,7 +1874,23 @@ splitshow section
   }
 }
 
+@media (max-width: 992px) {
+  .pt-75 {
+    padding-top: 4.5rem;
+  }
 
+  .pb-75 {
+    padding-bottom: 4.5rem;
+  }
+
+  .mt-75 {
+    margin-top: 4.5rem;
+  }
+
+  .mb-75 {
+    margin-bottom: 4.5rem;
+  }
+}
 
 @media (max-width: 900px) {
 
@@ -1880,20 +1906,20 @@ splitshow section
 }
 
 @media (max-width:768px) {
-.pt-75 {
-    padding-top: 4.5rem;
+  .pt-75 {
+    padding-top: 3.5rem;
   }
 
   .pb-75 {
-    padding-bottom: 4.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .mt-75 {
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
   }
 
   .mb-75 {
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
   }
 
   .cb-brief-ul-title .character {
@@ -2063,7 +2089,7 @@ splitshow section
   padding: 0;
 }
 
-.cb-tophead-header .en-s-title{
+.cb-tophead-header .en-s-title {
   font-size: 12.8px;
 }
 
@@ -2072,7 +2098,8 @@ splitshow section
   .cb-tophead-container p {
     max-width: 100%;
   }
-  .cb-tophead-header .en-s-title{
-  font-size: 11px;
-}
+
+  .cb-tophead-header .en-s-title {
+    font-size: 11px;
+  }
 }
