@@ -2103,3 +2103,67 @@ splitshow section
     font-size: 11px;
   }
 }
+
+.figma-link-container {
+  margin-top: 1.5rem;
+  border: 1px solid var(--skin-color);
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.figma-link-container .title-box {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  align-items: center;
+
+}
+
+.figma-link-container .title-box .icon-control,
+.figma-link-container .title-box .text {
+  color: var(--skin-color);
+  font-size: 1rem
+}
+
+.figma-link-container .title-box .icon-control {
+  padding: .5rem 1.5rem .5rem .75rem;
+  border-right: 1px solid var(--skin-color);
+}
+
+.figma-link-container .title-box .text {
+  font-size: 1.2rem;
+  padding: 0 1rem 0 .5rem;
+}
+
+.figma-link-container .figma-link-box {
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.figma-link-container .figma-link-box .link-text {
+  color: var(--skin-color);
+  font-size: 1rem;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.figma-link-container .figma-link-box .link-text::after {
+  content: "◆";
+  position: absolute;
+  bottom: 5px;
+  left: -10px;
+  font-size: .5rem;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.figma-link-container .figma-link-box .link-text:hover::after{
+  opacity: 1;
+}
