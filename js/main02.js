@@ -351,14 +351,14 @@ function bodyScrollingToggle() {
     //console.log("布榖豬喜歡草莓鮮奶茶")
     if(projectDetailsContainer.classList.contains("active")){
       //console.log("true")
-      projectDetailsBtn.querySelector("i").classList.remove("fa-minus");
-      projectDetailsBtn.querySelector("i").classList.add("fa-plus");
+      projectDetailsBtn.querySelector("i").classList.remove("fa-circle-chevron-up");
+      projectDetailsBtn.querySelector("i").classList.add("fa-circle-chevron-down");
       projectDetailsContainer.classList.remove("active");
       projectDetailsContainer.style.maxHeight = "0" + "px";
     } else{
       //console.log("false")
-      projectDetailsBtn.querySelector("i").classList.remove("fa-plus");
-      projectDetailsBtn.querySelector("i").classList.add("fa-minus");
+      projectDetailsBtn.querySelector("i").classList.remove("fa-circle-chevron-down");
+      projectDetailsBtn.querySelector("i").classList.add("fa-circle-chevron-up");
       projectDetailsContainer.classList.add("active");
       projectDetailsContainer.style.maxHeight = projectDetailsContainer.scrollHeight + "px";
      // popup.scrollTo(0,projectDetailsContainer.offsetTop);

@@ -932,7 +932,7 @@ splitshow section
   .cb-topcover-container,
   .cb-tophead-container,
   .cb-work-container {
-    padding: 0 20px;
+    padding: 0 12px;
   }
 
   .-rb.cb-advantage-content,
@@ -2166,4 +2166,11 @@ splitshow section
 }
 .figma-link-container .figma-link-box .link-text:hover::after{
   opacity: 1;
+}
+
+.togglebrieftext{
+  cursor: pointer;
+}
+.pp-project-details-btn{
+  cursor: pointer;
 }

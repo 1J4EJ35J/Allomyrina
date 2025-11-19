@@ -276,18 +276,20 @@ function bodyScrollingToggle() {
         closeBtn = document.querySelector(".pp-close"),
         ppBtnNav = document.querySelector(".pp-nav"),
         ppFrontPage = document.querySelector(".pp-frontpage"),
-        detailsBtn = document.querySelector(".pp-project-details-btn");
+        detailsBtn = document.querySelector(".pp-project-details-btn"),     
+        toggleBriefText = document.querySelector(".togglebrieftext");
   
   //closeBtn detailsBtn 若是包在forEach裡面，因為每一次生成不同，會導致按鈕呼叫有問題
   closeBtn.addEventListener("click", ()=>{
     popup.classList.toggle("open")
     bodyScrollingToggle()
+    console.log("ppBtnNav.querySelector('i')")
     if(detailsContent.classList.contains("active")){
       detailsToggle()
     }
-    if(ppBtnNav.querySelector("i").classList.contains("fa-minus")){
-      ppBtnNav.querySelector("i").classList.remove("fa-minus");
-      ppBtnNav.querySelector("i").classList.add("fa-plus");
+    if(ppBtnNav.querySelector("i").classList.contains("fa-circle-chevron-up")){
+      ppBtnNav.querySelector("i").classList.remove("fa-circle-chevron-up");
+      ppBtnNav.querySelector("i").classList.add("fa-circle-chevron-down");
       document.querySelector(".pp-moon").classList.remove("active");
       document.querySelector(".pp-srolltop").classList.remove("active");
       ppFrontPage.classList.remove("active");
@@ -300,16 +302,18 @@ function bodyScrollingToggle() {
   function detailsToggle(){
     if(detailsContent.classList.contains("active")){
       //console.log("true")
-      detailsBtn.querySelector("i").classList.remove("fa-minus");
-      detailsBtn.querySelector("i").classList.add("fa-plus");
+      detailsBtn.querySelector("i").classList.remove("fa-circle-chevron-up");
+      detailsBtn.querySelector("i").classList.add("fa-circle-chevron-down");
       detailsContent.classList.remove("active");
       detailsContent.style.maxHeight = "0" + "px";
+      toggleBriefText.textContent = "展開專案簡介";
     } else{
       //console.log("false")
-      detailsBtn.querySelector("i").classList.remove("fa-plus");
-      detailsBtn.querySelector("i").classList.add("fa-minus");
+      detailsBtn.querySelector("i").classList.remove("fa-circle-chevron-down");
+      detailsBtn.querySelector("i").classList.add("fa-circle-chevron-up");
       detailsContent.classList.add("active");
       detailsContent.style.maxHeight = "fit-content";
+      toggleBriefText.textContent = "關閉專案簡介";
      // popup.scrollTo(0,projectDetailsContainer.offsetTop);
     }
   }
